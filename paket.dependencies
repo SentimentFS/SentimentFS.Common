@@ -1,4 +1,8 @@
 source https://www.nuget.org/api/v2
+clitool dotnet-mono
+nuget Expecto >= 5.0.0
+nuget FSharp.Core >= 4.2.0
+clitool Microsoft.DotNet.Watcher.Tools
 
 group Build
     source https://www.nuget.org/api/v2
