@@ -1,2 +1,2 @@
-#### 0.1.0 - 17.03.2017
-* Initial release
+#### 0.1.0 - 03.09.2017
+* Memonization
