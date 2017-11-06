@@ -21,6 +21,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Func.fs" />
+    <Compile Include="List.fs" />
+    <Compile Include="Seq.fs" />
   </ItemGroup>
   <Import Project="..\..\.paket\Paket.Restore.targets" />
 </Project>

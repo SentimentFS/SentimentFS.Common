@@ -1,14 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFrameworks>netcoreapp2.0;net461</TargetFrameworks>
-  </PropertyGroup>
-  <ItemGroup>
-    <Compile Include="Func.fs" />
-    <Compile Include="Main.fs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="../../src/SentimentFS.Common/SentimentFS.Common.fsproj" />
-  </ItemGroup>
-  <Import Project="..\..\.paket\Paket.Restore.targets" />
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFrameworks>netcoreapp2.0;net461</TargetFrameworks>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="List.Tests.fs" />
+        <Compile Include="Seq.Tests.fs" />
+        <Compile Include="Func.fs" />
+        <Compile Include="Main.fs" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="../../src/SentimentFS.Common/SentimentFS.Common.fsproj" />
+    </ItemGroup>
+    <Import Project="..\..\.paket\Paket.Restore.targets" />
 </Project>
