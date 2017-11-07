@@ -9,11 +9,12 @@ module Func =
     let tests =
       testList "Func" [
         testCase "memonize" <| fun _ ->
+          let mutable executed = 0
           let test x =
-            System.Threading.Thread.Sleep(500)
-            1
+            executed <- executed + 1
+            x
           let func = Func.memonize test
-          let a = func 1
-          Expect.isTrue true ""
-          //Expect.isFasterThan (fun () -> func(1)) (fun () -> func(2)) "memonized function should be evaluated faster"
+          let firstTimeExecution = func 1
+          let secondTimeExecution = func 1
+          Expect.equal executed 1 "Execution count should equal 1"
       ]
