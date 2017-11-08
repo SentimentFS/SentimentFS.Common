@@ -2,19 +2,6 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
   </PropertyGroup>
-  <PropertyGroup>
-    <Title>SentimentFS_Common</Title>
-    <Description>SentimentFS_Common does the thing!</Description>
-    <!-- summary is not migrated from project.json, but you can use the <Description> property for that if needed. -->
-    <PackageTags>f#, fsharp</PackageTags>
-    <PackageProjectUrl>https://github.com/SentimentFS/SentimentFS_Common</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/SentimentFS/SentimentFS_Common/blob/master/LICENSE.md</PackageLicenseUrl>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <RepositoryType>git</RepositoryType>
-    <Authors>MyUsername</Authors>
-    <RepositoryUrl>https://github.com/SentimentFS/SentimentFS_Common</RepositoryUrl>
-    <!-- owners is not supported in MSBuild -->
-  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)'=='Release'">
     <Optimize>true</Optimize>
     <Tailcalls>true</Tailcalls>
@@ -23,6 +10,7 @@
     <Compile Include="Func.fs" />
     <Compile Include="List.fs" />
     <Compile Include="Seq.fs" />
+    <Compile Include="Map.fs" />
   </ItemGroup>
   <Import Project="..\..\.paket\Paket.Restore.targets" />
 </Project>

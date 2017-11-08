@@ -4,6 +4,7 @@
         <TargetFrameworks>netcoreapp2.0;net461</TargetFrameworks>
     </PropertyGroup>
     <ItemGroup>
+        <Compile Include="Map.Tests.fs" />
         <Compile Include="List.Tests.fs" />
         <Compile Include="Seq.Tests.fs" />
         <Compile Include="Func.fs" />
